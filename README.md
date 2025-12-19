@@ -40,6 +40,54 @@ IdentityVault manages the complete lifecycle of AI agent identities:
 
 It integrates with existing identity providers (Okta, Azure AD, etc.) and secret management systems (HashiCorp Vault, AWS Secrets Manager), so you don't have to replace your existing infrastructure.
 
+## How We're Different
+
+### vs. Okta / CyberArk / Ping Identity
+
+**What They Do**: IAM for human users, role-based access, annual credential rotation.
+
+**What We Do**: IAM for AI agents, task-specific access, hourly credential rotation.
+
+**Our Advantage**:
+- **AI Agent Native**: Built for non-human identities from day one (they retrofit)
+- **Time-Bound Credentials**: Just-in-time access, not long-lived credentials
+- **Task-Specific Permissions**: Agent can only do what it needs, when it needs it
+- **Automatic Rotation**: Hourly/daily rotation (they do annual)
+- **Agent Behavior Monitoring**: Tracks agent access patterns, not just user logins
+
+**The Reality**: Okta is great for human users. But when you have 100 AI agents that need credentials, Okta's human-focused model doesn't fit.
+
+**Positioning**:
+> "Okta was built before AI existed. IdentityVault uses AI agents for zero-trust by default."
+
+### vs. Secret Management (HashiCorp Vault, AWS Secrets Manager)
+
+**What They Do**: Store and retrieve secrets securely.
+
+**What We Do**: Complete identity lifecycle for AI agents, not just secret storage.
+
+**Our Advantage**:
+- **Identity Management**: Agent registration, permissions, lifecycle (they just store secrets)
+- **Access Control**: Authorization decisions, not just credential retrieval
+- **Audit Trail**: Complete access logs for compliance (they have basic logs)
+- **Risk Scoring**: Identifies high-risk agents automatically
+
+**The Reality**: Vault stores secrets well. But managing 100 AI agent identities requires more than just secret storage.
+
+### vs. Build-It-Yourself
+
+**What They Do**: Internal teams building custom agent IAM.
+
+**What We Do**: Open-source, pre-built identity management, community-maintained.
+
+**Our Advantage**:
+- **Save 12-18 Months**: Don't rebuild IAM from scratch
+- **Proven Patterns**: Battle-tested access control, not experimental
+- **Always Updated**: New identity providers? We add integrations
+- **Cost**: Free vs. $300K+ internal development
+
+**The Reality**: IAM is complex. Identity lifecycle, credential rotation, access control - we've already solved it.
+
 ## Who This Is For
 
 This is for:
@@ -47,6 +95,7 @@ This is for:
 - **Security teams** managing non-human identities
 - **DevOps teams** setting up agent infrastructure
 - **Organizations** scaling AI agent deployments
+- **Mid-market companies** who can't afford $200K+ enterprise IAM
 
 ## Current Status
 
