@@ -1,63 +1,69 @@
 # IdentityVault for Agents
 
-> Non-Human IAM Platform
+> Non-Human Identity & Access Management Platform
 
-[![License](https://img.shields.io/badge/license-Proprietary-blue.svg)](LICENSE)
-[![Documentation](https://img.shields.io/badge/docs-complete-brightgreen.svg)](product-specification.md)
+## What This Is
 
-## 🎯 Overview
+IdentityVault for Agents is an open-source identity and access management (IAM) platform designed specifically for AI agents and other non-human systems. It manages agent identities, credentials, and permissions - basically, it's like Okta or CyberArk, but built for AI agents instead of humans.
 
-IdentityVault for Agents is part of the **Agentic AI Security Suite for Financial Institutions** - a comprehensive platform designed to prevent agentic AI financial disruption in 2026.
+## The Current Landscape
 
-## 📚 Documentation
+Organizations are deploying AI agents that need credentials to access systems - databases, APIs, payment networks, etc. The problem is, traditional IAM tools were built for human users. They don't understand that:
+- AI agents need time-bound credentials (only valid for specific tasks)
+- Agent permissions should be task-specific, not role-based
+- Credentials should rotate automatically and frequently
+- Agent behavior should be monitored for access anomalies
 
-- **[Product Specification](product-specification.md)** - Complete product documentation
-- **[Suite Overview](../README_FINANCIAL_INSTITUTIONS.md)** - Full suite documentation for G-SIBs
-- **[Quick Reference](../QUICK_REFERENCE_G-SIBs.md)** - Executive summary
+Right now, many organizations are giving AI agents long-lived credentials or human user accounts, which creates security risks. If an agent gets compromised, those credentials can be abused. We need IAM tools that understand non-human identities.
 
-## 🏦 Target Institutions
+## Why We Built This
 
-This product is designed for **Global Systemically Important Banks (G-SIBs)**:
+We built IdentityVault for Agents because we saw organizations struggling to manage AI agent access securely. Traditional IAM doesn't fit, but building custom solutions is expensive and time-consuming.
 
-- JPMorgan Chase & Co.
-- Morgan Stanley
-- Bank of America
-- Citigroup Inc.
-- Goldman Sachs
-- Wells Fargo
-- U.S. Bancorp
-- Other G-SIBs globally
+By open-sourcing this:
+- **Organizations can manage agent access properly** - Without expensive proprietary tools
+- **The community can improve it** - More use cases means better access patterns
+- **Knowledge gets shared** - We can all learn from access management challenges
+- **Smaller teams can benefit** - Not everyone can build custom IAM
 
-## 🚀 Quick Start
+This is about making AI agent access management accessible, not keeping it proprietary.
 
-1. **Review** the [Product Specification](product-specification.md)
-2. **Schedule** an executive briefing
-3. **Request** a technical assessment
-4. **Begin** proof-of-concept discussion
+## What IdentityVault for Agents Does
 
-## 💰 Pricing
+IdentityVault manages the complete lifecycle of AI agent identities:
+- **Agent registration** - Register agents and assign identities
+- **Credential management** - Issue time-bound, task-specific credentials
+- **Automatic rotation** - Rotate credentials automatically (hourly, daily, etc.)
+- **Permission management** - Granular access controls per agent
+- **Access monitoring** - Track all agent access and detect anomalies
+- **Risk-based de-provisioning** - Automatically disable high-risk agents
 
-### Starter Edition
-Starting at $75K-200K/year depending on product
+It integrates with existing identity providers (Okta, Azure AD, etc.) and secret management systems (HashiCorp Vault, AWS Secrets Manager), so you don't have to replace your existing infrastructure.
 
-### Professional Edition
-Starting at $250K-600K/year
+## Who This Is For
 
-### Enterprise Edition
-$750K-3M/year (custom pricing for G-SIBs)
+This is for:
+- **Developers** deploying AI agents who need secure access
+- **Security teams** managing non-human identities
+- **DevOps teams** setting up agent infrastructure
+- **Organizations** scaling AI agent deployments
 
-### PE Portfolio License
-Custom pricing for portfolio-wide deployment
+## Current Status
 
-## 📋 Features
+This is an open-source project in active development. We're building this in public because we believe agent identity management should be accessible to everyone.
 
-See [Product Specification](product-specification.md) for complete feature list.
+## Getting Started
 
-## 🔗 Related Products
+1. Check out the [product specification](product-specification.md) for detailed technical information
+2. Review the [Cursor AI prompts](CURSOR_AI_PROMPTS_COMPLETE.md) if you want to build your own version
+3. Read the [executive brief](EXECUTIVE_BRIEF.md) for a high-level overview
+4. Contribute, fork, or use this however it helps you
 
-This product is part of a 10-product suite:
+## Related Projects
 
-1. [AgentGuard](../agentguard) - Unified AI Agent Security
+This is part of a suite of 10 open-source tools for AI agent security in finance:
+
+1. [AgentGuard](../agentguard) - Unified AI Agent Security & Governance
 2. [CodeShield AI](../codeshield-ai) - Secure Development Gateway
 3. [PaymentSentinel](../paymentsentinel) - Real-Time Transaction Defense
 4. [LegacyBridge](../legacybridge-ai-gateway) - Legacy Core Protection
@@ -68,16 +74,25 @@ This product is part of a 10-product suite:
 9. [SupplyChainGuard](../supplychainguard) - Development Tool Security
 10. [ComplianceIQ](../complianceiq) - Regulatory Reporting
 
-## 📞 Contact
+## Contributing
 
-- **Enterprise Sales**: [Contact Information]
-- **Technical Assessment**: [Contact Information]
-- **Regulatory Advisory**: [Contact Information]
+We welcome contributions! Whether it's:
+- Bug reports
+- Feature suggestions
+- Code improvements
+- Documentation fixes
+- New identity provider integrations
 
-## 📄 License
+Everything helps make these tools better for everyone.
 
-Proprietary - Enterprise License Required
+## License
+
+MIT License - Use it however you want.
+
+## Disclaimer
+
+This is open-source software provided as-is. Use at your own risk. We're not responsible for any losses or damages. This is a community project, not a commercial product.
 
 ---
 
-**Part of the Agentic AI Security Suite - Purpose-Built for G-SIBs**
+**Built with the hope that open collaboration can make AI agent access management safer for everyone.**
