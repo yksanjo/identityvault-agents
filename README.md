@@ -2,6 +2,8 @@
 
 > Non-Human Identity & Access Management Platform
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub stars](https://img.shields.io/github/stars/yksanjo/identityvault-agents?style=social)](https://github.com/yksanjo/identityvault-agents/stargazers) [![GitHub forks](https://img.shields.io/github/forks/yksanjo/identityvault-agents.svg)](https://github.com/yksanjo/identityvault-agents/network/members) [![GitHub issues](https://img.shields.io/github/issues/yksanjo/identityvault-agents.svg)](https://github.com/yksanjo/identityvault-agents/issues) [![Last commit](https://img.shields.io/github/last-commit/yksanjo/identityvault-agents.svg)](https://github.com/yksanjo/identityvault-agents/commits/main)
+
 ## What This Is
 
 IdentityVault for Agents is an open-source identity and access management (IAM) platform designed specifically for AI agents and other non-human systems. It manages agent identities, credentials, and permissions - basically, it's like Okta or CyberArk, but built for AI agents instead of humans.
