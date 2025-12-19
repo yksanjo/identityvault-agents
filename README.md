@@ -95,7 +95,33 @@ This is for:
 - **Security teams** managing non-human identities
 - **DevOps teams** setting up agent infrastructure
 - **Organizations** scaling AI agent deployments
+- **Banks with high fraud losses** (especially digital channels)
 - **Mid-market companies** who can't afford $200K+ enterprise IAM
+
+## Target Segments
+
+### Banks with High Fraud Losses
+**Why We Fit**: Built-in account takeover detection, continuous verification.
+
+**Positioning**: "Okta authenticates once. We verify continuously. The difference? $10M in prevented fraud."
+
+### Organizations Scaling AI Agents
+**Why We Fit**: Traditional IAM doesn't fit non-human identities.
+
+**Positioning**: "Okta was built before AI existed. IdentityVault uses AI agents for zero-trust by default."
+
+### Mid-Market Companies
+**Why We Fit**: Can't afford $200K+ enterprise IAM, but need agent identity management.
+
+**Positioning**: "Enterprise-grade agent IAM at mid-market prices."
+
+## Our Competitive Advantages
+
+1. **AI Agent Native**: Built for non-human identities from day one (they retrofit)
+2. **Time-Bound Credentials**: Just-in-time access, not long-lived credentials
+3. **Task-Specific Permissions**: Agent can only do what it needs, when it needs it
+4. **Automatic Rotation**: Hourly/daily rotation (they do annual)
+5. **Agent Behavior Monitoring**: Tracks agent access patterns, not just user logins
 
 ## Current Status
 
